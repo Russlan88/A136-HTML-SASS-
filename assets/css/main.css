@@ -1,7 +1,26 @@
+@font-face {
+  font-family: "Artegra Sans";
+  font-style: normal;
+  src: url("../fonts/ArtegraSans-ExtraBold.otf") format("opentype"), url("../fonts/ArtegraSans-ExtraLight.otf") format("opentype"), url("../fonts/ArtegraSans-Light.otf") format("opentype"), url("../fonts/ArtegraSans-LightItalic.otf") format("opentype"), url("../fonts/ArtegraSans-Medium.otf") format("opentype"), url("../fonts/ArtegraSans-Regular.otf") format("opentype"), url("../fonts/ArtegraSans-RegularItalic.otf") format("opentype");
+  /* Legacy iOS */ }
 body {
-  font-family: ArtegraSans; }
+  font-family: Artegra Sans;
+  font-weight: 100; }
 
 img {
+  width: 100%; }
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 5rem; }
+
+.pl {
+  padding-left: 10vw; }
+
+.pr {
+  padding-right: 10vw; }
+
+.row {
   width: 100%; }
 
 .right-sd {
@@ -20,6 +39,8 @@ img {
   height: 850px; }
   .news-promotions__title {
     font-size: 1rem; }
+  .news-promotions__main-container {
+    align-items: flex-end; }
   .news-promotions__img-description {
     display: flex;
     justify-content: space-between;
@@ -55,17 +76,282 @@ img {
     text-transform: uppercase;
     line-height: 3.8rem;
     transform: translateY(-50%); }
-  .preview-block__link {
-    color: #070707;
-    font-size: 1.4rem;
+  .preview-block .link {
+    font-size: 15px;
+    width: 13rem;
+    display: block;
+    color: #000000;
+    line-height: 25px;
     text-transform: uppercase;
-    text-decoration: none;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000;
     position: relative;
     top: 200px;
     left: 333px; }
+    .preview-block .link:hover {
+      text-decoration: none;
+      color: #000000; }
   .preview-block_bg {
     background: url(../images/A136_preview-block.jpg);
     background-size: cover;
     background-repeat: no-repeat; }
+
+/*****************************************************************
+******************************************************************
+
+				PAGE ABOUT US
+
+******************************************************************
+*****************************************************************/
+.full-image {
+  padding-bottom: 8rem; }
+  .full-image .social-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    .full-image .social-container__item {
+      display: block;
+      padding: 30px 15px;
+      color: #232529;
+      text-transform: uppercase; }
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .right-container__main h2 {
+    font-weight: 900;
+    line-height: 55px;
+    width: 25rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 600px;
+    margin-bottom: 2rem;
+    line-height: 5rem; }
+  .right-container__main p {
+    width: 23rem;
+    margin-left: 7rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px; }
+  .right-container__main .link {
+    font-size: 15px;
+    width: 13rem;
+    display: block;
+    color: #000000;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000; }
+    .right-container__main .link:hover {
+      text-decoration: none;
+      color: #000000; }
+  .right-container__title {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 55px;
+    width: 25rem;
+    margin-bottom: 3rem; }
+    .right-container__title span {
+      color: #B9B19D;
+      display: block; }
+  .right-container__lead {
+    margin-left: 5rem; }
+  .right-container .link {
+    margin-left: 7rem; }
+
+/* Double-preview section */
+.double-preview .main-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 600px;
+  margin-bottom: 2rem;
+  line-height: 5rem; }
+.double-preview__container {
+  align-items: flex-end; }
+  .double-preview__container .small-preview figure {
+    height: 490px;
+    overflow: hidden; }
+.double-preview__text-content {
+  width: 70%;
+  justify-content: space-between; }
+.double-preview__text-item {
+  width: 540px; }
+.double-preview .link {
+  font-size: 15px;
+  width: 13rem;
+  display: block;
+  color: #000000;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000000; }
+  .double-preview .link:hover {
+    text-decoration: none;
+    color: #000000; }
+
+/* Infrastructure */
+.infrastructure h2 {
+  font-weight: 900;
+  line-height: 55px;
+  width: 25rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 600px;
+  margin-bottom: 2rem;
+  line-height: 5rem; }
+.infrastructure p {
+  width: 23rem;
+  margin-left: 7rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px; }
+.infrastructure .link {
+  font-size: 15px;
+  width: 13rem;
+  display: block;
+  color: #000000;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000000; }
+  .infrastructure .link:hover {
+    text-decoration: none;
+    color: #000000; }
+.infrastructure__preview {
+  height: auto;
+  width: 100%;
+  margin-top: 12rem; }
+.infrastructure .link {
+  margin-left: 7rem; }
+
+/* Multiple Blocks | Slider */
+.multiple-blocks-containers__first-block {
+  width: 310px; }
+.multiple-blocks-containers__item {
+  width: 100%; }
+  .multiple-blocks-containers__item:first-child {
+    background: #B9B19D;
+    height: 405px; }
+  .multiple-blocks-containers__item:last-child {
+    height: 615px;
+    background: url("../images/About-us/Used__technology-slider/A136__living-room-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+.multiple-blocks-containers__second-block .slider__controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+.multiple-blocks-containers__third-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .multiple-blocks-containers__third-block h2 {
+    font-weight: 900;
+    line-height: 55px;
+    width: 25rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 600px;
+    margin-bottom: 2rem;
+    line-height: 5rem; }
+  .multiple-blocks-containers__third-block p {
+    width: 23rem;
+    margin-left: 7rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px; }
+  .multiple-blocks-containers__third-block .link {
+    font-size: 15px;
+    width: 13rem;
+    display: block;
+    color: #000000;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000; }
+    .multiple-blocks-containers__third-block .link:hover {
+      text-decoration: none;
+      color: #000000; }
+  .multiple-blocks-containers__third-block p {
+    margin-left: 0px; }
+
+/* Multiple Blocks | Gallery */
+.gallery-section {
+  /* first figure */ }
+  .gallery-section__left-container {
+    width: 125px;
+    height: 2290px;
+    align-items: flex-end; }
+  .gallery-section__color-figure {
+    height: 45%;
+    width: 100%;
+    background: #B9B19D; }
+  .gallery-section__innder-upper-container {
+    align-items: flex-end; }
+  .gallery-section__smaller-preview {
+    margin-bottom: 160px; }
+  .gallery-section__third-container {
+    margin-top: 770px;
+    width: 100%; }
+  .gallery-section__inner-lower-container {
+    padding-left: 10vw;
+    margin-top: 6rem; }
+    .gallery-section__inner-lower-container h2 {
+      font-weight: 900;
+      line-height: 55px;
+      width: 25rem;
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      font-size: 3rem;
+      text-transform: uppercase;
+      width: 600px;
+      margin-bottom: 2rem;
+      line-height: 5rem; }
+    .gallery-section__inner-lower-container p {
+      width: 23rem;
+      margin-left: 7rem;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 35px; }
+    .gallery-section__inner-lower-container .link {
+      font-size: 15px;
+      width: 13rem;
+      display: block;
+      color: #000000;
+      line-height: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-top: 50px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #000000; }
+      .gallery-section__inner-lower-container .link:hover {
+        text-decoration: none;
+        color: #000000; }
+    .gallery-section__inner-lower-container p {
+      margin-left: 0px; }
+  .gallery-section__fourth-container {
+    justify-content: center;
+    align-items: center;
+    height: 660px; }
+  .gallery-section__preview-container {
+    width: 1170px;
+    margin-top: 140px; }
 
 /*# sourceMappingURL=main.css.map */
