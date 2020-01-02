@@ -1,5 +1,8 @@
 body {
-  font-family: ArtegraSans; }
+  font-family: 'ArtegraSans'; }
+
+.container {
+  width: 1140px; }
 
 img {
   width: 100%; }
