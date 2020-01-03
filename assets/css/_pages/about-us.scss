@@ -1,0 +1,218 @@
+/*****************************************************************
+******************************************************************
+
+				PAGE ABOUT US
+
+******************************************************************
+*****************************************************************/
+
+
+.full-image {
+    padding-bottom: 8rem;
+
+    .social-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        &__item {
+            display: block;
+            padding: 30px 15px;
+            color: $l-color;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.right-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__main {
+        @include title__inner-padding;
+    }
+
+    &__title {
+        @include black-gold__title;
+        width: 25rem;
+        margin-bottom: 3rem;
+    }
+
+    &__lead {
+        margin-left: 5rem;
+    }
+
+    .link {
+        @include underline;
+        margin-left: 7rem;
+    }
+}
+
+/* Double-preview section */
+
+.double-preview {
+
+    .main-title {
+        @include main-tite;
+    }
+
+    &__container {
+        align-items: flex-end;
+
+        .small-preview {
+            figure {
+                height: 490px;
+                overflow: hidden;
+            }
+        }
+
+
+    }
+
+    &__text-content {
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    &__text-item {
+        width: 540px;
+    }
+
+    .link {
+        @include link;
+        @include underline;
+        // margin-left: 5rem;
+
+    }
+}
+
+
+/* Infrastructure */
+
+.infrastructure {
+    @include title__inner-padding;
+
+    &__preview {
+        height: auto;
+        width: 100%;
+        margin-top: 12rem;
+    }
+
+    .link {
+        margin-left: 7rem;
+        @include underline;
+    }
+}
+
+/* Multiple Blocks | Slider */
+
+.multiple-blocks-containers {
+    &__first-block {
+        width: 310px;
+    }
+
+    &__item {
+        width: 100%;
+
+        &:first-child {
+            background: $g-text;
+            height: 405px;
+        }
+
+        &:last-child {
+            height: 615px;
+
+            background: url("../images/About-us/Used__technology-slider/A136__living-room-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__second-block {
+
+        .slider {
+            &__controls {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+    }
+
+    &__third-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include title__inner-padding;
+
+        .link {
+            @include underline;
+        }
+
+        p {
+            margin-left: 0px;
+        }
+    }
+}
+
+
+/* Multiple Blocks | Gallery */
+
+.gallery-section {
+
+    /* first figure */
+
+    &__left-container {
+        width: 125px;
+        height: 2290px;
+        align-items: flex-end;
+
+    }
+
+    &__color-figure {
+        height: 45%;
+        width: 100%;
+        background: $g-text;
+    }
+
+    &__innder-upper-container {
+        align-items: flex-end;
+    }
+
+    &__smaller-preview {
+        margin-bottom: 160px;
+    }
+
+    &__third-container {
+        margin-top: 770px;
+        width: 100%;
+    }
+
+    &__inner-lower-container {
+        @include title__inner-padding;
+        padding-left: $pl;
+        margin-top: 6rem;
+
+        p {
+            margin-left: 0px;
+        }
+
+        .link {
+            @include underline;
+        }
+    }
+
+    &__fourth-container {
+        justify-content: center;
+        align-items: center;
+        height: 660px;
+    }
+
+    &__preview-container {
+        width: 1170px;
+        margin-top: 140px;
+    }
+}

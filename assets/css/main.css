@@ -1,74 +1,53 @@
+/* Gallery */
 @font-face {
   font-family: "Artegra Sans regular";
-  font-style: normal;
+  font-weight: normal;
   src: url("../fonts/ArtegraSans-Regular.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans bold-italic";
-  font-style: normal;
+  font-weight: normal;
   src: url("../fonts/ArtegraSans-ExtraBoldItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans extra-light";
-  font-style: normal;
+  font-weight: 100;
   src: url("../fonts/ArtegraSans-ExtraLight.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans exta-light-italic";
-  font-style: normal;
+  font-style: italic;
   src: url("../fonts/ArtegraSans-ExtraLightItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans light";
-  font-style: normal;
+  font-weight: 200;
   src: url("../fonts/ArtegraSans-Light.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans exta-light-italic";
-  font-style: normal;
+  font-weight: 100;
+  font-style: italic;
   src: url("../fonts/ArtegraSans-LightItalic.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans medium";
-  font-style: normal;
+  font-weight: normal;
   src: url("../fonts/ArtegraSans-Medium.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans exta-medium-italic";
-  font-style: normal;
+  font-weight: normal;
   src: url("../fonts/ArtegraSans-MediumItalic.otf") format("opentype"); }
 @font-face {
-  font-family: "Artegra Sans exta-bold";
-  font-style: 900;
+  font-family: "ArtegraSans-ExtraBold";
+  font-weight: bold;
   src: url("../fonts/ArtegraSans-ExtraBold.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans regular-italic";
   font-style: italic;
   src: url("../fonts/ArtegraSans-RegularItalic.otf") format("opentype"); }
-body {
-  font-family: "Artegra Sans regular";
-  font-weight: 100; }
+/* IMPORT STYLE COMPONENTS */
+/***************************************************
+****************************************************     
 
-img {
-  width: 100%; }
+        COMPONENT FOR NEWS AND PROMOTIONS 
 
-section {
-  padding-top: 3rem;
-  padding-bottom: 5rem; }
-
-.pl {
-  padding-left: 10vw; }
-
-.pr {
-  padding-right: 10vw; }
-
-.row {
-  width: 100%; }
-
-.right-sd {
-  display: flex;
-  justify-content: normal;
-  flex-direction: column;
-  align-items: flex-end; }
-  .right-sd__title {
-    font-size: 2.6rem;
-    width: 570px;
-    margin: 50px 200px;
-    text-transform: uppercase; }
-
+*****************************************************
+****************************************************/
 .news-promotions {
   position: relative;
   height: 850px; }
@@ -91,9 +70,10 @@ section {
     text-transform: uppercase;
     width: 600px;
     margin-bottom: 2rem;
-    line-height: 5rem; }
+    line-height: 5rem;
+    font-weight: 900; }
   .news-promotions__title {
-    font-size: 1rem; }
+    font-size: 2.9rem; }
   .news-promotions__main-container {
     align-items: flex-end; }
   .news-promotions__img-description {
@@ -164,6 +144,25 @@ section {
     background-size: cover;
     background-repeat: no-repeat; }
 
+/***************************************************
+****************************************************     
+
+        COMPONENT FOR BLOCK WITH LEFT SIDE 
+
+*****************************************************
+****************************************************/
+.right-sd {
+  display: flex;
+  justify-content: normal;
+  flex-direction: column;
+  align-items: flex-end; }
+  .right-sd__title {
+    font-size: 2.6rem;
+    width: 570px;
+    margin: 50px 200px;
+    text-transform: uppercase; }
+
+/* IMPORT STYLESHEET FOR THE PAGES */
 /*****************************************************************
 ******************************************************************
 
@@ -197,7 +196,8 @@ section {
     text-transform: uppercase;
     width: 600px;
     margin-bottom: 2rem;
-    line-height: 5rem; }
+    line-height: 5rem;
+    font-weight: 900; }
   .right-container__main p {
     width: 23rem;
     margin-left: 7rem;
@@ -238,7 +238,8 @@ section {
   text-transform: uppercase;
   width: 600px;
   margin-bottom: 2rem;
-  line-height: 5rem; }
+  line-height: 5rem;
+  font-weight: 900; }
 .double-preview__container {
   align-items: flex-end; }
   .double-preview__container .small-preview figure {
@@ -275,7 +276,8 @@ section {
   text-transform: uppercase;
   width: 600px;
   margin-bottom: 2rem;
-  line-height: 5rem; }
+  line-height: 5rem;
+  font-weight: 900; }
 .infrastructure p {
   width: 23rem;
   margin-left: 7rem;
@@ -334,7 +336,8 @@ section {
     text-transform: uppercase;
     width: 600px;
     margin-bottom: 2rem;
-    line-height: 5rem; }
+    line-height: 5rem;
+    font-weight: 900; }
   .multiple-blocks-containers__third-block p {
     width: 23rem;
     margin-left: 7rem;
@@ -390,7 +393,8 @@ section {
       text-transform: uppercase;
       width: 600px;
       margin-bottom: 2rem;
-      line-height: 5rem; }
+      line-height: 5rem;
+      font-weight: 900; }
     .gallery-section__inner-lower-container p {
       width: 23rem;
       margin-left: 7rem;
@@ -421,5 +425,116 @@ section {
   .gallery-section__preview-container {
     width: 1170px;
     margin-top: 140px; }
+
+.gallery {
+  padding: 0; }
+  .gallery__container {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; }
+  .gallery__img-holder {
+    display: block;
+    min-width: 100%;
+    height: 600px;
+    margin-bottom: 20px; }
+    .gallery__img-holder:nth-child(1n) {
+      width: 23%;
+      margin-right: 15px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(2n) {
+      width: 75%;
+      min-width: 435px;
+      max-width: 100%;
+      flex-grow: 1;
+      margin-right: 0px; }
+    .gallery__img-holder:nth-child(3n) {
+      width: 75%;
+      min-width: 435px;
+      max-width: 100%;
+      flex-grow: 1;
+      margin-right: 20px; }
+    .gallery__img-holder:nth-child(4n) {
+      width: 23%;
+      margin-right: 0px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(5n) {
+      width: 23.33333333%;
+      margin-right: 20px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(6n) {
+      width: 33.33333333%;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(7n) {
+      width: 23.33333333%;
+      margin-right: 0px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(8n) {
+      width: 23%;
+      margin-right: 15px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(9n) {
+      width: 75%;
+      min-width: 435px;
+      max-width: 100%;
+      flex-grow: 1;
+      margin-right: 0px; }
+  .gallery__item {
+    height: 100%;
+    object-fit: cover; }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(600px, auto);
+  grid-auto-flow: dense; }
+  .grid-layout .grid-item__item {
+    height: 100%;
+    object-fit: fill; }
+  .grid-layout .span:nth-of-type(2n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span:nth-child(3n) {
+    grid-column-end: span 2; }
+  .grid-layout .span:nth-child(5n) {
+    grid-row-end: span 2; }
+  .grid-layout .span:nth-child(6n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span:nth-child(7n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span.span:nth-child(8n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span:nth-child(9n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+
+body {
+  font-family: "Artegra Sans regular";
+  font-weight: 100; }
+
+img {
+  width: 100%; }
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 5rem; }
+
+.pl {
+  padding-left: 10vw; }
+
+.pr {
+  padding-right: 10vw; }
+
+.row {
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

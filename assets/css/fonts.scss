@@ -1,73 +1,74 @@
 @font-face {
   font-family: "Artegra Sans regular";
-  font-style: normal;
+  font-weight: normal;
   src: url('../fonts/ArtegraSans-Regular.otf') format("opentype");
-  }
+}
 
 @font-face {
   font-family: "Artegra Sans bold-italic";
-  font-style: normal;
+  font-weight: normal;
   src: url('../fonts/ArtegraSans-ExtraBoldItalic.otf') format("opentype");
-  
+
 }
 
 
 @font-face {
   font-family: "Artegra Sans extra-light";
-  font-style: normal;
+  font-weight: 100;
   src: url('../fonts/ArtegraSans-ExtraLight.otf') format("opentype");
-  
+
 }
 
 @font-face {
   font-family: "Artegra Sans exta-light-italic";
-  font-style: normal;
+  font-style: italic;
   src: url('../fonts/ArtegraSans-ExtraLightItalic.otf') format("opentype");
-  
+
 }
 
 
 @font-face {
   font-family: "Artegra Sans light";
-  font-style: normal;
+  font-weight: 200;
   src: url('../fonts/ArtegraSans-Light.otf') format("opentype");
-  
+
 }
 
 
 @font-face {
   font-family: "Artegra Sans exta-light-italic";
-  font-style: normal;
+  font-weight: 100;
+  font-style: italic;
   src: url('../fonts/ArtegraSans-LightItalic.otf') format("opentype");
-  
+
 }
 
 @font-face {
   font-family: "Artegra Sans medium";
-  font-style: normal;
+  font-weight: normal;
   src: url('../fonts/ArtegraSans-Medium.otf') format("opentype");
-  
+
 }
 
 @font-face {
   font-family: "Artegra Sans exta-medium-italic";
-  font-style: normal;
+  font-weight: normal;
   src: url('../fonts/ArtegraSans-MediumItalic.otf') format("opentype");
-  
+
 }
 
 @font-face {
-  font-family: "Artegra Sans exta-bold";
-  font-style: 900;
+  font-family: "ArtegraSans-ExtraBold";
+  font-weight: bold;
   src: url('../fonts/ArtegraSans-ExtraBold.otf') format("opentype");
-  
+
 }
 
 @font-face {
   font-family: "Artegra Sans regular-italic";
   font-style: italic;
   src: url('../fonts/ArtegraSans-RegularItalic.otf') format("opentype");
-  
+
 }
 
 

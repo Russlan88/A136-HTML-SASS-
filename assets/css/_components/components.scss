@@ -1,0 +1,130 @@
+/***************************************************
+****************************************************     
+
+        COMPONENT FOR NEWS AND PROMOTIONS 
+
+*****************************************************
+****************************************************/
+
+.news-promotions {
+
+    position: relative;
+    height: 850px;
+
+
+    .link {
+        &_underline {
+            @include underline;
+            @include link;
+        }
+    }
+
+
+    h2 {
+        @include main-tite;
+
+    }
+
+    &__title {
+        font-size: 2.9rem;
+    }
+
+    &__main-container {
+        align-items: flex-end;
+    }
+
+    &__img-description {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+        color: $gt-color;
+
+    }
+
+    &::after {
+        content: '';
+        background: #F9F9F9;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 80%;
+        height: 100%;
+        z-index: -1;
+    }
+
+
+
+    .row {
+        align-items: flex-end;
+    }
+
+    .news-item {
+        &__title {
+            font-size: 1rem;
+        }
+
+        .link {
+            @include link;
+        }
+    }
+
+
+}
+
+
+/* Preview block */
+
+.preview-block {
+    background: url(../images/A136_preview.jpg);
+    width: 80vw;
+    height: 555px;
+    @include bg-img;
+
+    &__title {
+        font-size: 2.6rem;
+        width: 570px;
+        max-width: 100%;
+        position: relative;
+        top: 40%;
+        left: -160px;
+        text-transform: uppercase;
+        line-height: 3.8rem;
+        transform: translateY(-50%);
+
+    }
+
+    .link {
+        @include link;
+        position: relative;
+        top: 200px;
+        left: 333px;
+    }
+
+    &_bg {
+        background: url(../images/A136_preview-block.jpg);
+        @include bg-img;
+    }
+}
+
+/***************************************************
+****************************************************     
+
+        COMPONENT FOR BLOCK WITH LEFT SIDE 
+
+*****************************************************
+****************************************************/
+
+.right-sd {
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__title {
+        font-size: 2.6rem;
+        width: 570px;
+        margin: 50px 200px;
+        text-transform: uppercase;
+
+    }
+}
