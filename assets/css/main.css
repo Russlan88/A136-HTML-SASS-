@@ -1,4 +1,5 @@
 /* Gallery */
+/* NEWS PAGE */
 @font-face {
   font-family: "Artegra Sans regular";
   font-weight: normal;
@@ -60,6 +61,7 @@
     color: #000000;
     line-height: 25px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     margin-top: 50px; }
     .news-promotions .link_underline:hover {
@@ -101,6 +103,7 @@
     color: #000000;
     line-height: 25px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     margin-top: 50px; }
     .news-promotions .news-item .link:hover {
@@ -131,6 +134,7 @@
     color: #000000;
     line-height: 25px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     margin-top: 50px;
     position: relative;
@@ -211,6 +215,7 @@
     color: #000000;
     line-height: 25px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     margin-top: 50px; }
     .right-container__main .link:hover {
@@ -257,6 +262,7 @@
   color: #000000;
   line-height: 25px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 700;
   margin-top: 50px;
   padding-bottom: 20px;
@@ -291,6 +297,7 @@
   color: #000000;
   line-height: 25px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 700;
   margin-top: 50px; }
   .infrastructure .link:hover {
@@ -351,6 +358,7 @@
     color: #000000;
     line-height: 25px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     margin-top: 50px; }
     .multiple-blocks-containers__third-block .link:hover {
@@ -408,6 +416,7 @@
       color: #000000;
       line-height: 25px;
       text-transform: uppercase;
+      text-decoration: none;
       font-weight: 700;
       margin-top: 50px; }
       .gallery-section__inner-lower-container .link:hover {
@@ -516,6 +525,52 @@
   .grid-layout .span:nth-child(9n) {
     grid-column-end: span 2;
     grid-row-end: span 1; }
+
+/*****************************************************************
+******************************************************************
+
+				PAGE ABOUT US
+
+******************************************************************
+*****************************************************************/
+section .content-image {
+  display: flex; }
+  section .content-image .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 20vw;
+    padding-left: 10vw; }
+    section .content-image .text-content span {
+      color: #68625D;
+      font-size: 12px; }
+    section .content-image .text-content h4 {
+      font-size: 35px;
+      line-height: 45px;
+      text-transform: uppercase; }
+    section .content-image .text-content p {
+      color: #6C6C6C;
+      font-size: 18px;
+      line-height: 28px; }
+    section .content-image .text-content .link {
+      font-size: 15px;
+      width: 13rem;
+      display: block;
+      color: #000000;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 50px; }
+      section .content-image .text-content .link:hover {
+        text-decoration: none;
+        color: #000000; }
+  section .content-image figure {
+    margin: 0;
+    width: 50%; }
+    section .content-image figure img {
+      display: block; }
 
 body {
   font-family: "Artegra Sans regular";

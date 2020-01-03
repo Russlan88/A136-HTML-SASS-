@@ -27,9 +27,10 @@
     color: $b-color;
     line-height: 25px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     margin-top: 50px;
-    
+
 
     &:hover {
         text-decoration: none;
@@ -70,6 +71,58 @@
     .link {
         @include link;
     }
+
+
+}
+
+
+/* NEWS PAGE */
+
+@mixin imgRight {
+
+    .content-image {
+        display: flex;
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: flex-end;
+            margin-right: 20vw;
+            padding-left: $pl;
+
+            span {
+                color: $gt-color;
+                font-size: 12px;
+            }
+
+            h4 {
+                font-size: 35px;
+                line-height: 45px;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $n-color;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .link {
+                @include link;
+            }
+        }
+
+        figure {
+            margin: 0;
+            width: 50%;
+
+            img {
+                display: block;
+            }
+        }
+    }
+
 
 
 }
