@@ -8,13 +8,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<!-- Bootstrap css cdn -->
-		<!-- 
+
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
-		/> -->
+		/>
 
 		<!-- Bootstrap js cdn -->
 
@@ -35,65 +35,166 @@
 		></script>
 	</head>
 	<body>
-		<section>
-			<div class="container">text</div>
-		</section>
-		<!-- NEWS & PROMOTIONS -->
+		<div class="app-hero">
+			<div class="app-header">
+				<figure class="app-header__logo">
+					<img src="../../assets/images/A136__logo-w.png" alt="A136" />
+				</figure>
 
-		<section class="news-promotions">
-			<h2 class="news-promotions__title">Новости и акции</h2>
-			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 news-promotions__main-container">
-				<div class="news-promotions__preview col-md-6">
-					<img src="assets/images/News__promotion/A136_news.jpg" class="img-fluid" alt="" />
-					<div class="news-promotions__img-description"><span>06/09</span><span>New</span></div>
-
-					<h4 class="news-promotions__title">
-						But I must explain to you how all this mistaken idea of denouncing pleasure
-					</h4>
-				</div>
-				<div class="news-promotions__news col-md-6">
-					<div class="row">
-						<div class="news-promotions__news-item news-item col-md-6">
-							<img src="assets/images/News__promotion/A136_promotion_1.jpg" class="img-fluid" alt="" />
-							<div class="news-promotions__img-description"><span>06/09</span><span>New</span></div>
-							<h4 class="news-item__title">
-								Stay Trendy and In Time – Early Booking Offer
-							</h4>
-						</div>
-						<div class="news-promotions__news-item news-item col-md-6">
-							<img src="assets/images/News__promotion/A136_promotion_2.jpg" class="img-fluid" alt="" />
-							<div class="news-promotions__img-description"><span>06/09</span><span>New</span></div>
-							<h4 class="news-item__title">
-								Stay Trendy and In Time – Early Booking Offer
-							</h4>
-						</div>
+				<div class="app-header__map">
+					<div class="app-header-container">
+						<span>{{ sityMap }}</span>
+						<a href="">{{ showMap }}</a>
+					</div>
+					<div class="button-wrap oh-desktop">
+						<a class="cta wow slideInUp" href="tel:{{ phoneNumber }}">{{ phoneNumber }}</a>
 					</div>
 				</div>
+
+				<div class="app-header__nav-menu">
+					<!-- Nav menu -->
+
+					<input type="checkbox" id="toggle" style="display:none;" />
+					<label class="toggle-btn toggle-btn__cross" for="toggle">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</label>
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact me</a></li>
+						</ul>
+					</nav>
+
+					<ul class="app-header__list">
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/main']"
+								routerLinkActive="router-link-active"
+							>
+								Main
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/about_complex']"
+								routerLinkActive="router-link-active"
+							>
+								About complex
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/about_developer']"
+								routerLinkActive="router-link-active"
+							>
+								About developer
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/bye_conditions']"
+								routerLinkActive="router-link-active"
+							>
+								Bye Condition
+							</a>
+						</li>
+
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/documents']"
+								routerLinkActive="router-link-active"
+							>
+								Documents
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/contacts']"
+								routerLinkActive="router-link-active"
+							>
+								Contacts
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/ready_dim']"
+								routerLinkActive="router-link-active"
+							>
+								Ready dim
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/building_process']"
+								routerLinkActive="router-link-active"
+							>
+								Building process
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/select_flat']"
+								routerLinkActive="router-link-active"
+							>
+								Select flat
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/flats']"
+								routerLinkActive="router-link-active"
+							>
+								Flats
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/gallery']"
+								routerLinkActive="router-link-active"
+							>
+								Gallery
+							</a>
+						</li>
+						<li>
+							<a
+								class="app-header__list-item"
+								[routerLink]="['/news']"
+								routerLinkActive="router-link-active"
+							>
+								News
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</section>
 
-		<section class="right-sd">
-			<h2 class="right-sd__title">
-				Блок с проектами компании и переход на сайт
-			</h2>
-
-			<!-- Reusable component -->
-
-			<div class="preview-block">
-				<h3 class="preview-block__title">
-					Discover new emotions and to be inspired by the local atmosphere
-				</h3>
-				<a href="#" class="preview-block__link">Read more</a>
-			</div>
-		</section>
-
-		<section class="right-sd">
-			<div class="preview- block preview-block_bg">
-				<h3 class="preview-block__title">
-					Discover new emotions and to be inspired by the local atmosphere
-				</h3>
-				<a href="#" class="link">Read more</a>
-			</div>
-		</section>
+			<h1 class="app-hero__h1">
+				The world’s most advanced thermal
+			</h1>
+			<a href="" class="linkTo cta wow slideInUp link">{{ linkToSecondSection }}</a>
+			<ul class="app-hero__list-social">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+			<div class="app-hero__rectangle"></div>
+			<a href="#" class="app-hero__watch-block">
+				<span>{{ watchHouse }}</span>
+			</a>
+		</div>
 	</body>
 </html>
