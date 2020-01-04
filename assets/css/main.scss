@@ -11,6 +11,7 @@
 @import "./_pages/about-us.scss";
 @import "./_pages/gallery.scss";
 @import "./_pages/news.scss";
+@import "./_pages/single-news.scss";
 
 
 
@@ -27,6 +28,10 @@ body {
     // font-size: 0.17rem;
 }
 
+figure{
+    margin: 0;
+}
+
 img {
     width: 100%;
 }
@@ -36,12 +41,24 @@ section {
     padding-bottom: 5rem;
 }
 
+.main-title{
+    @include main-tite;
+}
+
 .pl {
     padding-left: $pl;
 }
 
 .pr {
     padding-right: $pr;
+}
+
+.ml{
+    margin-left: $pl;
+}
+
+.mr{
+    margin-right: $pl;
 }
 
 .row {

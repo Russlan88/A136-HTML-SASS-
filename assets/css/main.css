@@ -1,47 +1,48 @@
 /* Gallery */
 /* MAIN COLORS */
 /* NEWS PAGE */
+/* mixins for the page single-news */
 @font-face {
   font-family: "Artegra Sans regular";
-  font-weight: normal;
-  src: url("../fonts/ArtegraSans-Regular.otf") format("opentype"); }
-@font-face {
-  font-family: "Artegra Sans bold-italic";
-  font-weight: normal;
-  src: url("../fonts/ArtegraSans-ExtraBoldItalic.otf") format("opentype"); }
+  font-weight: 400;
+  src: url("../fonts/ArtegraSans-Regular.otf") format("embedded-opentype"), url("../fonts/ArtegraSans-Regular.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans extra-light";
   font-weight: 100;
-  src: url("../fonts/ArtegraSans-ExtraLight.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-ExtraLight.otf") format("embedded-opentype"), url("../fonts/ArtegraSans-ExtraLight.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans exta-light-italic";
   font-style: italic;
-  src: url("../fonts/ArtegraSans-ExtraLightItalic.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-ExtraLightItalic.otf") format("embedded-opentype"); }
 @font-face {
   font-family: "Artegra Sans light";
   font-weight: 200;
-  src: url("../fonts/ArtegraSans-Light.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-Light.otf") format("embedded-opentype"), url("../fonts/ArtegraSans-Light.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans exta-light-italic";
   font-weight: 100;
   font-style: italic;
-  src: url("../fonts/ArtegraSans-LightItalic.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-LightItalic.otf") format("embedded-opentype"); }
 @font-face {
   font-family: "Artegra Sans medium";
-  font-weight: normal;
-  src: url("../fonts/ArtegraSans-Medium.otf") format("opentype"); }
+  font-weight: 600;
+  src: url("../fonts/ArtegraSans-Medium.otf") format("embedded-opentype"), url("../fonts/ArtegraSans-Medium.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans exta-medium-italic";
   font-weight: normal;
-  src: url("../fonts/ArtegraSans-MediumItalic.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-MediumItalic.otf") format("embedded-opentype"), url("ArtegraSans-MediumItalic.otf") format("opentype"); }
 @font-face {
-  font-family: "ArtegraSans-ExtraBold";
+  font-family: "ArtegraSans ExtraBold-italic";
+  font-weight: normal;
+  src: url("../fonts/ArtegraSans-ExtraBoldItalic.otf") format("embedded-opentype"); }
+@font-face {
+  font-family: "ArtegraSans ExtraBold";
   font-weight: bold;
-  src: url("../fonts/ArtegraSans-ExtraBold.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-ExtraBold.otf") format("embedded-opentype"), url("../fonts/ArtegraSans-ExtraBold.otf") format("opentype"); }
 @font-face {
   font-family: "Artegra Sans regular-italic";
   font-style: italic;
-  src: url("../fonts/ArtegraSans-RegularItalic.otf") format("opentype"); }
+  src: url("../fonts/ArtegraSans-RegularItalic.otf") format("embedded-opentype"); }
 /* IMPORT STYLE COMPONENTS */
 /***************************************************
 ****************************************************     
@@ -69,12 +70,18 @@
       text-decoration: none;
       color: #000000; }
   .news-promotions h2 {
+    font-family: "ArtegraSans ExtraBold";
     font-size: 3rem;
     text-transform: uppercase;
-    width: 600px;
+    width: 100%;
     margin-bottom: 2rem;
-    line-height: 5rem;
-    font-weight: 900; }
+    line-height: 3.6rem;
+    font-weight: 900;
+    padding-right: 55%; }
+    @media (max-width: 767.98px) {
+      .news-promotions h2 {
+        width: 100%;
+        font-size: 2.4rem; } }
   .news-promotions__title {
     font-size: 2.9rem; }
   .news-promotions__main-container {
@@ -404,12 +411,18 @@
     width: 25rem;
     margin-bottom: 3rem;
     font-size: 3rem;
+    font-family: "ArtegraSans ExtraBold";
     font-size: 3rem;
     text-transform: uppercase;
-    width: 600px;
+    width: 100%;
     margin-bottom: 2rem;
-    line-height: 5rem;
-    font-weight: 900; }
+    line-height: 3.6rem;
+    font-weight: 900;
+    padding-right: 55%; }
+    @media (max-width: 767.98px) {
+      .right-container__main h2 {
+        width: 100%;
+        font-size: 2.4rem; } }
   .right-container__main p {
     width: 23rem;
     margin-left: 7rem;
@@ -447,12 +460,18 @@
 
 /* Double-preview section */
 .double-preview .main-title {
+  font-family: "ArtegraSans ExtraBold";
   font-size: 3rem;
   text-transform: uppercase;
-  width: 600px;
+  width: 100%;
   margin-bottom: 2rem;
-  line-height: 5rem;
-  font-weight: 900; }
+  line-height: 3.6rem;
+  font-weight: 900;
+  padding-right: 55%; }
+  @media (max-width: 767.98px) {
+    .double-preview .main-title {
+      width: 100%;
+      font-size: 2.4rem; } }
 .double-preview__container {
   align-items: flex-end; }
   .double-preview__container .small-preview figure {
@@ -486,12 +505,18 @@
   width: 25rem;
   margin-bottom: 3rem;
   font-size: 3rem;
+  font-family: "ArtegraSans ExtraBold";
   font-size: 3rem;
   text-transform: uppercase;
-  width: 600px;
+  width: 100%;
   margin-bottom: 2rem;
-  line-height: 5rem;
-  font-weight: 900; }
+  line-height: 3.6rem;
+  font-weight: 900;
+  padding-right: 55%; }
+  @media (max-width: 767.98px) {
+    .infrastructure h2 {
+      width: 100%;
+      font-size: 2.4rem; } }
 .infrastructure p {
   width: 23rem;
   margin-left: 7rem;
@@ -547,12 +572,18 @@
     width: 25rem;
     margin-bottom: 3rem;
     font-size: 3rem;
+    font-family: "ArtegraSans ExtraBold";
     font-size: 3rem;
     text-transform: uppercase;
-    width: 600px;
+    width: 100%;
     margin-bottom: 2rem;
-    line-height: 5rem;
-    font-weight: 900; }
+    line-height: 3.6rem;
+    font-weight: 900;
+    padding-right: 55%; }
+    @media (max-width: 767.98px) {
+      .multiple-blocks-containers__third-block h2 {
+        width: 100%;
+        font-size: 2.4rem; } }
   .multiple-blocks-containers__third-block p {
     width: 23rem;
     margin-left: 7rem;
@@ -605,12 +636,18 @@
       width: 25rem;
       margin-bottom: 3rem;
       font-size: 3rem;
+      font-family: "ArtegraSans ExtraBold";
       font-size: 3rem;
       text-transform: uppercase;
-      width: 600px;
+      width: 100%;
       margin-bottom: 2rem;
-      line-height: 5rem;
-      font-weight: 900; }
+      line-height: 3.6rem;
+      font-weight: 900;
+      padding-right: 55%; }
+      @media (max-width: 767.98px) {
+        .gallery-section__inner-lower-container h2 {
+          width: 100%;
+          font-size: 2.4rem; } }
     .gallery-section__inner-lower-container p {
       width: 23rem;
       margin-left: 7rem;
@@ -749,10 +786,9 @@ section .content-image {
     width: 50%;
     justify-content: flex-end;
     margin-right: 20vw;
-    padding-left: 10vw; }
-    section .content-image .text-content span {
-      color: #68625D;
-      font-size: 12px; }
+    padding-left: 10vw;
+    color: #68625D;
+    font-size: 12px; }
     section .content-image .text-content h4 {
       font-size: 35px;
       line-height: 45px;
@@ -780,9 +816,87 @@ section .content-image {
     section .content-image figure img {
       display: block; }
 
+.post-controls__prev-post {
+  background: url(../images/single_news/A136__prev-post.jpg);
+  height: 400px;
+  color: #fff !important;
+  font-family: "ArtegraSans ExtraBold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  text-transform: uppercase; }
+  .post-controls__prev-post:hover {
+    text-decoration: none; }
+  @media (max-width: 991.98px) {
+    .post-controls__prev-post {
+      font-size: 2rem; } }
+.post-controls__next-post {
+  background: url(../images/single_news/A136__next-post.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  height: 400px;
+  color: #fff !important;
+  font-family: "ArtegraSans ExtraBold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  text-transform: uppercase; }
+  .post-controls__next-post:hover {
+    text-decoration: none; }
+  @media (max-width: 991.98px) {
+    .post-controls__next-post {
+      font-size: 2rem; } }
+
+.single-news__title {
+  position: relative; }
+  .single-news__title::after {
+    content: "06/09/2019";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    line-height: 0;
+    font-family: "Artegra Sans regular";
+    color: #68625D;
+    font-size: 12px; }
+
+.right-side-content {
+  padding: 100px 30%; }
+  @media (max-width: 767.98px) {
+    .right-side-content {
+      padding: 50px 10%; } }
+  .right-side-content__title-h4 {
+    font-family: "Artegra Sans medium";
+    font-size: 2rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .right-side-content__paragraph {
+    font-family: "Artegra Sans extra-light";
+    font-size: .9rem;
+    margin-bottom: 50px; }
+  .right-side-content__title-h3 {
+    font-size: 1.1rem;
+    margin-bottom: 30px; }
+  .right-side-content__share {
+    color: #71757E;
+    font-size: 14px;
+    font-family: "Artegra Sans light"; }
+    .right-side-content__share span {
+      font-family: "Artegra Sans medium";
+      color: #232529;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-left: 20px;
+      letter-spacing: .1rem; }
+
 body {
   font-family: "Artegra Sans regular";
   font-weight: 100; }
+
+figure {
+  margin: 0; }
 
 img {
   width: 100%; }
@@ -791,13 +905,31 @@ section {
   padding-top: 3rem;
   padding-bottom: 5rem; }
 
+.main-title {
+  font-family: "ArtegraSans ExtraBold";
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 2rem;
+  line-height: 3.6rem;
+  font-weight: 900;
+  padding-right: 55%; }
+  @media (max-width: 767.98px) {
+    .main-title {
+      width: 100%;
+      font-size: 2.4rem; } }
+
 .pl {
   padding-left: 10vw; }
 
 .pr {
   padding-right: 10vw; }
 
+.ml {
+  margin-left: 10vw; }
+
+.mr {
+  margin-right: 10vw; }
+
 .row {
   width: 100%; }
-
-/*# sourceMappingURL=main.css.map */

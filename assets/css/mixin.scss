@@ -1,13 +1,24 @@
 @import '../css/variables.scss';
 
+@mixin date{
+        color: $gt-color;
+        font-size: 12px;
+    
+}
 
 @mixin main-tite {
+    font-family: "ArtegraSans ExtraBold";
     font-size: $main-title;
     text-transform: uppercase;
-    width: 600px;
+    width: 100%;
     margin-bottom: 2rem;
-    line-height: 5rem;
+    line-height: 3.6rem;
     font-weight: 900;
+    padding-right: 55%;
+    @media (max-width: 767.98px) {
+        width: 100%; 
+        font-size: 2.4rem; 
+    }
 }
 
 @mixin underline {
@@ -91,10 +102,7 @@
             margin-right: 20vw;
             padding-left: $pl;
 
-            span {
-                color: $gt-color;
-                font-size: 12px;
-            }
+            @include date;
 
             h4 {
                 font-size: 35px;
@@ -125,4 +133,33 @@
 
 
 
+}
+
+/* mixins for the page single-news */
+
+@mixin centered-text{
+    color: $w-color !important;
+    font-family: "ArtegraSans ExtraBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+@mixin title-h4{
+    font-family: "Artegra Sans medium";
+    font-size: 2rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@mixin paragraph{
+    font-family: "Artegra Sans extra-light";
+    font-size: .9rem;
+    margin-bottom: 50px;
 }
