@@ -23,17 +23,12 @@
 
 
 .single-news{  
-    &__title{
-        position: relative;
-        &::after{
-            content: "06/09/2019";
-            position: absolute;
-            right: 0px;
-            bottom: 0px;
-            line-height: 0;
-            font-family: "Artegra Sans regular";
-            @include date;
-        }
+    &__title{ 
+        
+    }
+
+    &__date{
+        @include date;
     }
 }
 

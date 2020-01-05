@@ -84,8 +84,7 @@
       .news-promotions h2 {
         width: 100%;
         font-size: 2.4rem;
-        padding: 0;
-        height: 210px; } }
+        padding: 0; } }
   .news-promotions__title {
     font-size: 2.9rem; }
   .news-promotions__main-container {
@@ -426,8 +425,7 @@
       .right-container__main h2 {
         width: 100%;
         font-size: 2.4rem;
-        padding: 0;
-        height: 210px; } }
+        padding: 0; } }
   .right-container__main p {
     width: 23rem;
     margin-left: 7rem;
@@ -476,8 +474,7 @@
     .double-preview .main-title {
       width: 100%;
       font-size: 2.4rem;
-      padding: 0;
-      height: 210px; } }
+      padding: 0; } }
 .double-preview__container {
   align-items: flex-end; }
   .double-preview__container .small-preview figure {
@@ -522,8 +519,7 @@
     .infrastructure h2 {
       width: 100%;
       font-size: 2.4rem;
-      padding: 0;
-      height: 210px; } }
+      padding: 0; } }
 .infrastructure p {
   width: 23rem;
   margin-left: 7rem;
@@ -590,8 +586,7 @@
       .multiple-blocks-containers__third-block h2 {
         width: 100%;
         font-size: 2.4rem;
-        padding: 0;
-        height: 210px; } }
+        padding: 0; } }
   .multiple-blocks-containers__third-block p {
     width: 23rem;
     margin-left: 7rem;
@@ -655,8 +650,7 @@
         .gallery-section__inner-lower-container h2 {
           width: 100%;
           font-size: 2.4rem;
-          padding: 0;
-          height: 210px; } }
+          padding: 0; } }
     .gallery-section__inner-lower-container p {
       width: 23rem;
       margin-left: 7rem;
@@ -858,17 +852,9 @@ section .content-image {
     .post-controls__next-post {
       font-size: 2rem; } }
 
-.single-news__title {
-  position: relative; }
-  .single-news__title::after {
-    content: "06/09/2019";
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    line-height: 0;
-    font-family: "Artegra Sans regular";
-    color: #68625D;
-    font-size: 12px; }
+.single-news__date {
+  color: #68625D;
+  font-size: 12px; }
 
 .right-side-content {
   padding: 100px 30%; }
@@ -926,8 +912,7 @@ section {
     .main-title {
       width: 100%;
       font-size: 2.4rem;
-      padding: 0;
-      height: 210px; } }
+      padding: 0; } }
 
 .pl {
   padding-left: 10vw; }
