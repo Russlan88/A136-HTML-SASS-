@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAWA,aAAa;AAab,iBAAiB;ACkEjB,eAAe;AA6Bf,qCAAqC",
-"sources": ["variables.scss","mixin.scss"],
+"mappings": "AAAA,cAAc;ACWd,aAAa;AAab,iBAAiB;ADmDjB,eAAe",
+"sources": ["mixin.scss","variables.scss"],
 "names": [],
 "file": "mixin.css"
 }

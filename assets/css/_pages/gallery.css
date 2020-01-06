@@ -1,0 +1,92 @@
+.gallery {
+  padding: 0; }
+  .gallery__container {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; }
+  .gallery__img-holder {
+    display: block;
+    min-width: 100%;
+    height: 600px;
+    margin-bottom: 20px; }
+    .gallery__img-holder:nth-child(1n) {
+      width: 23%;
+      margin-right: 15px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(2n) {
+      width: 75%;
+      min-width: 435px;
+      max-width: 100%;
+      flex-grow: 1;
+      margin-right: 0px; }
+    .gallery__img-holder:nth-child(3n) {
+      width: 75%;
+      min-width: 435px;
+      max-width: 100%;
+      flex-grow: 1;
+      margin-right: 20px; }
+    .gallery__img-holder:nth-child(4n) {
+      width: 23%;
+      margin-right: 0px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(5n) {
+      width: 23.33333333%;
+      margin-right: 20px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(6n) {
+      width: 33.33333333%;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(7n) {
+      width: 23.33333333%;
+      margin-right: 0px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(8n) {
+      width: 23%;
+      margin-right: 15px;
+      min-width: 250px;
+      max-width: 100%; }
+    .gallery__img-holder:nth-child(9n) {
+      width: 75%;
+      min-width: 435px;
+      max-width: 100%;
+      flex-grow: 1;
+      margin-right: 0px; }
+  .gallery__item {
+    height: 100%;
+    object-fit: cover; }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(600px, auto);
+  grid-auto-flow: dense; }
+  .grid-layout .grid-item__item {
+    height: 100%;
+    object-fit: fill; }
+  .grid-layout .span:nth-of-type(2n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span:nth-child(3n) {
+    grid-column-end: span 2; }
+  .grid-layout .span:nth-child(5n) {
+    grid-row-end: span 2; }
+  .grid-layout .span:nth-child(6n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span:nth-child(7n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span.span:nth-child(8n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+  .grid-layout .span:nth-child(9n) {
+    grid-column-end: span 2;
+    grid-row-end: span 1; }
+
+/*# sourceMappingURL=gallery.css.map */

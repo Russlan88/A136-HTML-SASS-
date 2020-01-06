@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
 Error: Undefined variable: "$w-color".
+=======
+Error: Undefined variable: "$whiteColor".
+>>>>>>> master
         on line 22 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/home-page.scss
 
 17:         font-size: 55px;
@@ -7,7 +11,11 @@ Error: Undefined variable: "$w-color".
 19:         display: flex;
 20:         align-items: center;
 21:         text-transform: uppercase;
+<<<<<<< HEAD
 22:         color: $w-color;
+=======
+22:         color: $whiteColor;
+>>>>>>> master
 23:     }
 24: 
 25: 
@@ -73,4 +81,8 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
+<<<<<<< HEAD
   content: "Error: Undefined variable: \"$w-color\".\A         on line 22 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/home-page.scss\A \A 17:         font-size: 55px;\A 18:         line-height: 65px;\A 19:         display: flex;\A 20:         align-items: center;\A 21:         text-transform: uppercase;\A 22:         color: $w-color;\A 23:     }\A 24: \A 25: \A 26:     .app-header {\A 27:         display: flex;"; }
+=======
+  content: "Error: Undefined variable: \"$whiteColor\".\A         on line 22 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/home-page.scss\A \A 17:         font-size: 55px;\A 18:         line-height: 65px;\A 19:         display: flex;\A 20:         align-items: center;\A 21:         text-transform: uppercase;\A 22:         color: $whiteColor;\A 23:     }\A 24: \A 25: \A 26:     .app-header {\A 27:         display: flex;"; }
+>>>>>>> master

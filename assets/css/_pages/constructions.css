@@ -1,21 +1,19 @@
 /*
 Error: Undefined mixin 'title-h4'.
-        on line 4 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss, in `title-h4'
-        from line 4 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss
+        on line 2 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss, in `title-h4'
+        from line 2 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss
 
-1: 
-2: 
-3: .title-h4{
-4:     @include title-h4;
-5:     color: $b-color;
-6: }
-7: 
-8: .list-content{
-9:     margin: 0;
+1: .title-h4 {
+2:   @include title-h4;
+3:   color: $b-color;
+4: }
+5: 
+6: .list-content {
+7:   margin: 0;
 
 Backtrace:
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss:4:in `title-h4'
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss:4
+/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss:2:in `title-h4'
+/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss:2
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -64,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'title-h4'.\A         on line 4 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss, in `title-h4'\A         from line 4 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss\A \A 1: \A 2: \A 3: .title-h4{\A 4:     @include title-h4;\A 5:     color: $b-color;\A 6: }\A 7: \A 8: .list-content{\A 9:     margin: 0;"; }
+  content: "Error: Undefined mixin 'title-h4'.\A         on line 2 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss, in `title-h4'\A         from line 2 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/constructions.scss\A \A 1: .title-h4 {\A 2:   @include title-h4;\A 3:   color: $b-color;\A 4: }\A 5: \A 6: .list-content {\A 7:   margin: 0;"; }

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'main-tite'.
-        on line 10 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss, in `main-tite'
-        from line 10 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss
+        on line 14 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss, in `main-tite'
+        from line 14 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss
 
-5: 
-6: *****************************************************
-7: ****************************************************\/
-8: 
-9: .main-title {
-10:     @include main-tite;
-11: }
+9:  *
+10:  * @format
+11:  *\/
 12: 
-13: .news-promotions {
-14: 
-15:     position: relative;
+13: .main-title {
+14:   @include main-tite;
+15: }
+16: 
+17: .news-promotions {
+18:   position: relative;
+19:   height: 850px;
 
 Backtrace:
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss:10:in `main-tite'
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss:10
+/Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss:14:in `main-tite'
+/Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss:14
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'main-tite'.\A         on line 10 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss, in `main-tite'\A         from line 10 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss\A \A 5: \A 6: *****************************************************\A 7: ****************************************************/\A 8: \A 9: .main-title {\A 10:     @include main-tite;\A 11: }\A 12: \A 13: .news-promotions {\A 14: \A 15:     position: relative;"; }
+  content: "Error: Undefined mixin 'main-tite'.\A         on line 14 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss, in `main-tite'\A         from line 14 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_components/components.scss\A \A 9:  *\A 10:  * @format\A 11:  */\A 12: \A 13: .main-title {\A 14:   @include main-tite;\A 15: }\A 16: \A 17: .news-promotions {\A 18:   position: relative;\A 19:   height: 850px;"; }

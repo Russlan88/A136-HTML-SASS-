@@ -1,15 +1,23 @@
+<<<<<<< HEAD
 @import "./mixin.scss";
 @import "./fonts.scss";
 @import "./_media-query.scss";
 
 
+=======
+/** @format */
+
+@import './mixin.scss';
+@import './fonts.scss';
+>>>>>>> master
 
 /* IMPORT STYLE COMPONENTS */
 
-@import "./_components/components.scss";
+@import './_components/components.scss';
 
 /* IMPORT STYLESHEET FOR THE PAGES */
 
+<<<<<<< HEAD
 @import "./_pages/home-page.scss"; 
 @import "./_pages/about-us.scss";
 @import "./_pages/gallery.scss";
@@ -19,6 +27,13 @@
 
 
 
+=======
+@import './_pages/home-page.scss';
+@import './_pages/about-us.scss';
+@import './_pages/gallery.scss';
+@import './_pages/news.scss';
+@import './_pages/constructions.scss';
+>>>>>>> master
 
 // * {
 // 	// box-sizing: border-box;
@@ -27,9 +42,9 @@
 // }
 
 body {
-    font-family: "Artegra Sans regular";
-    font-weight: 100;
-    // font-size: 0.17rem;
+	font-family: 'Artegra Sans regular';
+	font-weight: 100;
+	// font-size: 0.17rem;
 }
 
 figure{
@@ -37,9 +52,10 @@ figure{
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
+<<<<<<< HEAD
 // section {
 //     padding-top: 3rem;
 //     padding-bottom: 5rem;
@@ -47,12 +63,18 @@ img {
 
 .main-title{
     @include main-tite;
+=======
+section {
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+>>>>>>> master
 }
 
 .pl {
-    padding-left: $pl;
+	padding-left: $pl;
 }
 
+<<<<<<< HEAD
 // .pr {
 //     padding-right: $pr;
 // }
@@ -63,8 +85,12 @@ img {
 
 .mr{
     margin-right: $pl;
+=======
+.pr {
+	padding-right: $pr;
+>>>>>>> master
 }
 
 .row {
-    width: 100%;
+	width: 100%;
 }
