@@ -1,35 +1,28 @@
 /*
-Error: Undefined variable: "$l-color".
-        on line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss
+Error: Undefined mixin 'title__inner-padding'.
+        on line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss, in `title__inner-padding'
+        from line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss
 
-16:         justify-content: flex-end;
-17: 
-18:         &__item {
-19:             display: block;
-20:             padding: 30px 15px;
-21:             color: $l-color;
-22:             text-transform: uppercase;
-23:         }
-24:     }
-25: }
-26: 
+16:     display: flex;
+17:     justify-content: center;
+18:     align-items: center;
+19: 
+20:     &__main {
+21:         @include title__inner-padding;
+22:     }
+23: 
+24:     &__title {
+25:         @include black-gold__title;
+26:         width: 25rem;
 
 Backtrace:
+/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss:21:in `title__inner-padding'
 /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss:21
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -84,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$l-color\".\A         on line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss\A \A 16:         justify-content: flex-end;\A 17: \A 18:         &__item {\A 19:             display: block;\A 20:             padding: 30px 15px;\A 21:             color: $l-color;\A 22:             text-transform: uppercase;\A 23:         }\A 24:     }\A 25: }\A 26: "; }
+  content: "Error: Undefined mixin 'title__inner-padding'.\A         on line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss, in `title__inner-padding'\A         from line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss\A \A 16:     display: flex;\A 17:     justify-content: center;\A 18:     align-items: center;\A 19: \A 20:     &__main {\A 21:         @include title__inner-padding;\A 22:     }\A 23: \A 24:     &__title {\A 25:         @include black-gold__title;\A 26:         width: 25rem;"; }

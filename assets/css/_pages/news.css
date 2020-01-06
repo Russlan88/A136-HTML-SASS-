@@ -1,6 +1,6 @@
 /*
-Error: Undefined mixin 'imgRight'.
-        on line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss, in `imgRight'
+Error: Undefined mixin 'left-align-content'.
+        on line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss, in `left-align-content'
         from line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss
 
 6: ******************************************************************
@@ -8,11 +8,15 @@ Error: Undefined mixin 'imgRight'.
 8: 
 9: 
 10: section {
-11:     @include imgRight;
+11:     @include left-align-content;
 12: }
+13: 
+14: .pagination{
+15:     &__item{
+16:         list-style: none;
 
 Backtrace:
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss:11:in `imgRight'
+/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss:11:in `left-align-content'
 /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss:11
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -62,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'imgRight'.\A         on line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss, in `imgRight'\A         from line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss\A \A 6: ******************************************************************\A 7: *****************************************************************/\A 8: \A 9: \A 10: section {\A 11:     @include imgRight;\A 12: }"; }
+  content: "Error: Undefined mixin 'left-align-content'.\A         on line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss, in `left-align-content'\A         from line 11 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/news.scss\A \A 6: ******************************************************************\A 7: *****************************************************************/\A 8: \A 9: \A 10: section {\A 11:     @include left-align-content;\A 12: }\A 13: \A 14: .pagination{\A 15:     &__item{\A 16:         list-style: none;"; }

@@ -1,130 +1,130 @@
 /** @format */
 
-@import '../css/variables.scss';
+@import "../css/variables.scss";
 
 @mixin main-tite {
-	font-family: 'ArtegraSans ExtraBold';
-	font-size: 3rem;
-	text-transform: uppercase;
-	width: 100%;
-	margin-bottom: 2rem;
-	line-height: 3.6rem;
-	font-weight: 900;
+  font-family: "ArtegraSans ExtraBold";
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 2rem;
+  line-height: 3.6rem;
+  font-weight: 900;
 }
 
 @mixin underline {
-	padding-bottom: 20px;
-	border-bottom: 2px solid $b-color;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $b-color;
 }
 
 @mixin bg-img {
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @mixin link {
-	font-size: 15px;
-	width: 13rem;
-	display: block;
-	color: $b-color;
-	line-height: 25px;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 700;
-	margin-top: 50px;
+  font-size: 15px;
+  width: 13rem;
+  display: block;
+  color: $b-color;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 50px;
 
-	&:hover {
-		text-decoration: none;
-		color: $b-color;
-	}
+  &:hover {
+    text-decoration: none;
+    color: $b-color;
+  }
 }
 
 @mixin black-gold__title {
-	font-weight: 900;
-	font-size: 3rem;
-	line-height: 55px;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 55px;
 
-	span {
-		color: $g-text;
-		display: block;
-	}
+  span {
+    color: $g-text;
+    display: block;
+  }
 }
 
 @mixin title__inner-padding {
-	h2 {
-		font-weight: 900;
-		line-height: 55px;
-		width: 25rem;
-		margin-bottom: 3rem;
-		font-size: $main-title;
-		@include main-tite;
-	}
+  h2 {
+    font-weight: 900;
+    line-height: 55px;
+    width: 25rem;
+    margin-bottom: 3rem;
+    font-size: $main-title;
+    @include main-tite;
+  }
 
-	p {
-		width: 23rem;
-		margin-left: 7rem;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 35px;
-	}
+  p {
+    width: 23rem;
+    margin-left: 7rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+  }
 
-	.link {
-		@include link;
-	}
+  .link {
+    @include link;
+  }
 }
 
 /* NEWS PAGE */
 
 @mixin imgRight {
-	.content-image {
-		display: flex;
+  .content-image {
+    display: flex;
 
-		.text-content {
-			display: flex;
-			flex-direction: column;
-			width: 50%;
-			justify-content: flex-end;
-			margin-right: 20vw;
-			padding-left: $pl;
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: flex-end;
+      margin-right: 20vw;
+      padding-left: $pl;
 
-			span {
-				color: $gt-color;
-				font-size: 12px;
-			}
+      span {
+        color: $gt-color;
+        font-size: 12px;
+      }
 
-			p {
-				color: $n-color;
-				font-size: 18px;
-				line-height: 28px;
-			}
+      p {
+        color: $n-color;
+        font-size: 18px;
+        line-height: 28px;
+      }
 
-			.link {
-				@include link;
-			}
-		}
+      .link {
+        @include link;
+      }
+    }
 
-		figure {
-			margin: 0;
-			width: 50%;
+    figure {
+      margin: 0;
+      width: 50%;
 
-			img {
-				display: block;
-			}
-		}
-	}
+      img {
+        display: block;
+      }
+    }
+  }
 }
 
 @mixin title-h4 {
-	h4 {
-		font-size: 35px;
-		line-height: 45px;
-		text-transform: uppercase;
-	}
-	font-family: 'ArtegraSans ExtraBold';
-	font-size: 3rem;
-	text-transform: uppercase;
-	width: 100%;
-	margin-bottom: 2rem;
-	line-height: 3.6rem;
-	font-weight: 900;
+  h4 {
+    font-size: 35px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+  font-family: "ArtegraSans ExtraBold";
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 2rem;
+  line-height: 3.6rem;
+  font-weight: 900;
 }
