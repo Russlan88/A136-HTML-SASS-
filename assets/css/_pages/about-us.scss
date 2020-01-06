@@ -9,19 +9,6 @@
 
 .full-image {
     padding-bottom: 8rem;
-
-    .social-container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-
-        &__item {
-            display: block;
-            padding: 30px 15px;
-            color: $l-color;
-            text-transform: uppercase;
-        }
-    }
 }
 
 .right-container {
@@ -54,9 +41,6 @@
 
 .double-preview {
 
-    .main-title {
-        @include main-tite;
-    }
 
     &__container {
         align-items: flex-end;

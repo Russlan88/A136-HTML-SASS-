@@ -23,9 +23,6 @@
 
 
 .single-news{  
-    &__title{ 
-        
-    }
 
     &__date{
         @include date;

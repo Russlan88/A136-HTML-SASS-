@@ -43,9 +43,6 @@
   font-family: "Artegra Sans regular-italic";
   font-style: italic;
   src: url("../fonts/ArtegraSans-RegularItalic.otf") format("embedded-opentype"); }
-@media (min-width: 768px) {
-  .pr-md-5, .px-md-5 {
-    padding-right: 49rem !important; } }
 /* IMPORT STYLE COMPONENTS */
 /***************************************************
 ****************************************************     
@@ -54,6 +51,20 @@
 
 *****************************************************
 ****************************************************/
+.main-title {
+  font-family: "ArtegraSans ExtraBold";
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 2rem;
+  line-height: 3.6rem;
+  font-weight: 900; }
+  @media (max-width: 767.98px) {
+    .main-title {
+      width: 100%;
+      font-size: 2.4rem;
+      padding: 0; } }
+
 .news-promotions {
   position: relative;
   height: 850px; }
@@ -68,7 +79,8 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-family: "ArtegraSans ExtraBold"; }
     .news-promotions .link_underline:hover {
       text-decoration: none;
       color: #000000; }
@@ -116,7 +128,8 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-family: "ArtegraSans ExtraBold"; }
     .news-promotions .news-item .link:hover {
       text-decoration: none;
       color: #000000; }
@@ -148,6 +161,7 @@
     text-decoration: none;
     font-weight: 700;
     margin-top: 50px;
+    font-family: "ArtegraSans ExtraBold";
     position: relative;
     top: 200px;
     left: 333px; }
@@ -176,6 +190,19 @@
     width: 570px;
     margin: 50px 200px;
     text-transform: uppercase; }
+
+.social-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
+  .social-container__item {
+    display: block;
+    margin: 30px 15px;
+    color: #232529;
+    text-transform: uppercase; }
+    .social-container__item:hover {
+      text-decoration: none;
+      color: inherit; }
 
 /* IMPORT STYLESHEET FOR THE PAGES */
 .app-hero {
@@ -394,15 +421,6 @@
 *****************************************************************/
 .full-image {
   padding-bottom: 8rem; }
-  .full-image .social-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-    .full-image .social-container__item {
-      display: block;
-      padding: 30px 15px;
-      color: #232529;
-      text-transform: uppercase; }
 
 .right-container {
   display: flex;
@@ -441,7 +459,8 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-family: "ArtegraSans ExtraBold"; }
     .right-container__main .link:hover {
       text-decoration: none;
       color: #000000; }
@@ -462,19 +481,6 @@
     margin-left: 7rem; }
 
 /* Double-preview section */
-.double-preview .main-title {
-  font-family: "ArtegraSans ExtraBold";
-  font-size: 3rem;
-  text-transform: uppercase;
-  width: 100%;
-  margin-bottom: 2rem;
-  line-height: 3.6rem;
-  font-weight: 900; }
-  @media (max-width: 767.98px) {
-    .double-preview .main-title {
-      width: 100%;
-      font-size: 2.4rem;
-      padding: 0; } }
 .double-preview__container {
   align-items: flex-end; }
   .double-preview__container .small-preview figure {
@@ -495,6 +501,7 @@
   text-decoration: none;
   font-weight: 700;
   margin-top: 50px;
+  font-family: "ArtegraSans ExtraBold";
   padding-bottom: 20px;
   border-bottom: 2px solid #000000; }
   .double-preview .link:hover {
@@ -535,7 +542,8 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  margin-top: 50px; }
+  margin-top: 50px;
+  font-family: "ArtegraSans ExtraBold"; }
   .infrastructure .link:hover {
     text-decoration: none;
     color: #000000; }
@@ -602,7 +610,8 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-family: "ArtegraSans ExtraBold"; }
     .multiple-blocks-containers__third-block .link:hover {
       text-decoration: none;
       color: #000000; }
@@ -666,7 +675,8 @@
       text-transform: uppercase;
       text-decoration: none;
       font-weight: 700;
-      margin-top: 50px; }
+      margin-top: 50px;
+      font-family: "ArtegraSans ExtraBold"; }
       .gallery-section__inner-lower-container .link:hover {
         text-decoration: none;
         color: #000000; }
@@ -781,43 +791,46 @@
 
 ******************************************************************
 *****************************************************************/
-section .content-image {
-  display: flex; }
-  section .content-image .text-content {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: flex-end;
-    margin-right: 20vw;
-    padding-left: 10vw;
-    color: #68625D;
-    font-size: 12px; }
-    section .content-image .text-content h4 {
-      font-size: 35px;
-      line-height: 45px;
-      text-transform: uppercase; }
-    section .content-image .text-content p {
-      color: #6C6C6C;
-      font-size: 18px;
-      line-height: 28px; }
-    section .content-image .text-content .link {
-      font-size: 15px;
-      width: 13rem;
-      display: block;
-      color: #000000;
-      line-height: 25px;
-      text-transform: uppercase;
+section .text-content {
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #68625D;
+  font-size: 12px; }
+  section .text-content h4 {
+    font-family: "Artegra Sans medium";
+    font-size: 2rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 25px; }
+  section .text-content p {
+    color: #6C6C6C;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px; }
+  section .text-content .link {
+    font-size: 15px;
+    width: 13rem;
+    display: block;
+    color: #000000;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 50px;
+    font-family: "ArtegraSans ExtraBold"; }
+    section .text-content .link:hover {
       text-decoration: none;
-      font-weight: 700;
-      margin-top: 50px; }
-      section .content-image .text-content .link:hover {
-        text-decoration: none;
-        color: #000000; }
-  section .content-image figure {
-    margin: 0;
-    width: 50%; }
-    section .content-image figure img {
-      display: block; }
+      color: #000000; }
+
+.pagination__item {
+  list-style: none;
+  color: #6C6C6C; }
+  .pagination__item.active {
+    color: #000000;
+    font-family: "Artegra Sans medium"; }
+.pagination__next-page {
+  color: #6C6C6C; }
 
 .post-controls__prev-post {
   background: url(../images/single_news/A136__prev-post.jpg);
@@ -886,6 +899,38 @@ section .content-image {
       margin-left: 20px;
       letter-spacing: .1rem; }
 
+.title-h4 {
+  font-family: "Artegra Sans medium";
+  font-size: 2rem;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #000000; }
+
+.list-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .list-content li {
+    color: #6C6C6C;
+    font-size: 1.1rem;
+    list-style: none;
+    position: relative;
+    padding-left: 55px; }
+    .list-content li::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      margin-right: 30px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #B9B19D;
+      border-radius: 50%;
+      top: 7px; }
+
+.contact__title {
+  color: #232529; }
+
 body {
   font-family: "Artegra Sans regular";
   font-weight: 100; }
@@ -895,10 +940,6 @@ figure {
 
 img {
   width: 100%; }
-
-section {
-  padding-top: 3rem;
-  padding-bottom: 5rem; }
 
 .main-title {
   font-family: "ArtegraSans ExtraBold";
@@ -916,9 +957,6 @@ section {
 
 .pl {
   padding-left: 10vw; }
-
-.pr {
-  padding-right: 10vw; }
 
 .ml {
   margin-left: 10vw; }

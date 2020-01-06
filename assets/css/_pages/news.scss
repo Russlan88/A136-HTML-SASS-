@@ -8,5 +8,19 @@
 
 
 section {
-    @include imgRight;
+    @include left-align-content;
+}
+
+.pagination{
+    &__item{
+        list-style: none;
+        color: $n-color;
+        &.active{
+            color: $b-color;
+            font-family: "Artegra Sans medium";
+        }
+    }
+    &__next-page{
+        color: $n-color;
+    }
 }

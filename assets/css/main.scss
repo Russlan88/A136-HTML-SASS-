@@ -15,6 +15,7 @@
 @import "./_pages/gallery.scss";
 @import "./_pages/news.scss";
 @import "./_pages/single-news.scss";
+@import "./_pages/constructions.scss";
 
 
 
@@ -39,10 +40,10 @@ img {
     width: 100%;
 }
 
-section {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-}
+// section {
+//     padding-top: 3rem;
+//     padding-bottom: 5rem;
+// }
 
 .main-title{
     @include main-tite;
@@ -52,9 +53,9 @@ section {
     padding-left: $pl;
 }
 
-.pr {
-    padding-right: $pr;
-}
+// .pr {
+//     padding-right: $pr;
+// }
 
 .ml{
     margin-left: $pl;

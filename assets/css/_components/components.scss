@@ -6,6 +6,10 @@
 *****************************************************
 ****************************************************/
 
+.main-title {
+    @include main-tite;
+}
+
 .news-promotions {
 
     position: relative;
@@ -126,5 +130,21 @@
         margin: 50px 200px;
         text-transform: uppercase;
 
+    }
+}
+
+.social-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &__item {
+        display: block;
+        margin: 30px 15px;
+        color: $l-color;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: none;
+            color: inherit;
+        }
     }
 }
