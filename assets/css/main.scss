@@ -1,19 +1,19 @@
-@import "./mixin.scss";
-@import "./fonts.scss";
+/** @format */
+
+@import './mixin.scss';
+@import './fonts.scss';
 
 /* IMPORT STYLE COMPONENTS */
 
-@import "./_components/components.scss";
+@import './_components/components.scss';
 
 /* IMPORT STYLESHEET FOR THE PAGES */
 
-@import "./_pages/home-page.scss"; 
-@import "./_pages/about-us.scss";
-@import "./_pages/gallery.scss";
-@import "./_pages/news.scss";
-
-
-
+@import './_pages/home-page.scss';
+@import './_pages/about-us.scss';
+@import './_pages/gallery.scss';
+@import './_pages/news.scss';
+@import './_pages/constructions.scss';
 
 // * {
 // 	// box-sizing: border-box;
@@ -22,28 +22,28 @@
 // }
 
 body {
-    font-family: "Artegra Sans regular";
-    font-weight: 100;
-    // font-size: 0.17rem;
+	font-family: 'Artegra Sans regular';
+	font-weight: 100;
+	// font-size: 0.17rem;
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 section {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
 }
 
 .pl {
-    padding-left: $pl;
+	padding-left: $pl;
 }
 
 .pr {
-    padding-right: $pr;
+	padding-right: $pr;
 }
 
 .row {
-    width: 100%;
+	width: 100%;
 }

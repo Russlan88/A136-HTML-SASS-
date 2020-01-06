@@ -1,20 +1,15 @@
 /** @format */
 
-.title-h4 {
-	@include title-h4;
-	color: $b-color;
-}
-
 .list-content {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	li {
-		color: $n-color;
+		color: rgb(108, 108, 108);
 		font-size: 1.1rem;
-		list-style: none;
 		position: relative;
 		padding-left: 55px;
+		list-style: none;
 		&::before {
 			content: '';
 			position: absolute;
@@ -22,15 +17,12 @@
 			margin-right: 30px;
 			width: 15px;
 			height: 15px;
-			border: 1px solid $gold;
-			border-radius: 50%;
 			top: 7px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: rgb(185, 177, 157);
+			border-image: initial;
+			border-radius: 50%;
 		}
-	}
-}
-
-.contact {
-	&__title {
-		color: $l-color;
 	}
 }
