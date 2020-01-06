@@ -1,3 +1,5 @@
+@import "../mixin.scss";
+
 .title-h4 {
   @include title-h4;
   color: $b-color;
@@ -28,7 +30,25 @@
 }
 
 .contact {
+  margin-top: 13rem;
   &__title {
     color: $l-color;
   }
+  figure {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: $bk-color;
+      height: 685px;
+      top: -120px;
+      width: 640px;
+      left: 15px;
+      z-index: -1;
+    }
+  }
+}
+
+.form-contact {
+  @include contact-form;
 }

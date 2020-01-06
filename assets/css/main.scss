@@ -1,39 +1,19 @@
-<<<<<<< HEAD
 @import "./mixin.scss";
 @import "./fonts.scss";
 @import "./_media-query.scss";
 
-
-=======
-/** @format */
-
-@import './mixin.scss';
-@import './fonts.scss';
->>>>>>> master
-
 /* IMPORT STYLE COMPONENTS */
 
-@import './_components/components.scss';
+@import "./_components/components.scss";
 
 /* IMPORT STYLESHEET FOR THE PAGES */
 
-<<<<<<< HEAD
-@import "./_pages/home-page.scss"; 
+@import "./_pages/home-page.scss";
 @import "./_pages/about-us.scss";
 @import "./_pages/gallery.scss";
 @import "./_pages/news.scss";
 @import "./_pages/single-news.scss";
 @import "./_pages/constructions.scss";
-
-
-
-=======
-@import './_pages/home-page.scss';
-@import './_pages/about-us.scss';
-@import './_pages/gallery.scss';
-@import './_pages/news.scss';
-@import './_pages/constructions.scss';
->>>>>>> master
 
 // * {
 // 	// box-sizing: border-box;
@@ -42,55 +22,44 @@
 // }
 
 body {
-	font-family: 'Artegra Sans regular';
-	font-weight: 100;
-	// font-size: 0.17rem;
+  font-family: "Artegra Sans regular";
+  font-weight: 100;
+  // font-size: 0.17rem;
 }
 
-figure{
-    margin: 0;
+figure {
+  margin: 0;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
 
-<<<<<<< HEAD
 // section {
 //     padding-top: 3rem;
 //     padding-bottom: 5rem;
 // }
 
-.main-title{
-    @include main-tite;
-=======
-section {
-	padding-top: 3rem;
-	padding-bottom: 5rem;
->>>>>>> master
+.main-title {
+  @include main-tite;
 }
 
 .pl {
-	padding-left: $pl;
+  padding-left: $pl;
 }
 
-<<<<<<< HEAD
 // .pr {
 //     padding-right: $pr;
 // }
 
-.ml{
-    margin-left: $pl;
+.ml {
+  margin-left: $pl;
 }
 
-.mr{
-    margin-right: $pl;
-=======
-.pr {
-	padding-right: $pr;
->>>>>>> master
+.mr {
+  margin-right: $pl;
 }
 
 .row {
-	width: 100%;
+  width: 100%;
 }

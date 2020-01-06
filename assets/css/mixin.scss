@@ -1,15 +1,23 @@
-/** @format */
-
 @import "../css/variables.scss";
+
+@mixin date {
+  color: $gt-color;
+  font-size: 12px;
+}
 
 @mixin main-tite {
   font-family: "ArtegraSans ExtraBold";
-  font-size: 3rem;
+  font-size: $main-title;
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 2rem;
   line-height: 3.6rem;
   font-weight: 900;
+  @media (max-width: 767.98px) {
+    width: 100%;
+    font-size: 2.4rem;
+    padding: 0;
+  }
 }
 
 @mixin underline {
@@ -32,6 +40,7 @@
   text-decoration: none;
   font-weight: 700;
   margin-top: 50px;
+  font-family: "ArtegraSans ExtraBold";
 
   &:hover {
     text-decoration: none;
@@ -75,56 +84,83 @@
 
 /* NEWS PAGE */
 
-@mixin imgRight {
-  .content-image {
-    display: flex;
+@mixin left-align-content {
+  .text-content {
+    flex-direction: column;
+    justify-content: flex-end;
 
-    .text-content {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      justify-content: flex-end;
-      margin-right: 20vw;
-      padding-left: $pl;
+    @include date;
 
-      span {
-        color: $gt-color;
-        font-size: 12px;
-      }
-
-      p {
-        color: $n-color;
-        font-size: 18px;
-        line-height: 28px;
-      }
-
-      .link {
-        @include link;
-      }
+    h4 {
+      @include title-h4;
+      margin-top: 25px;
     }
 
-    figure {
-      margin: 0;
-      width: 50%;
+    p {
+      color: $n-color;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0px;
+    }
 
-      img {
-        display: block;
-      }
+    .link {
+      @include link;
     }
   }
 }
 
+/* mixins for the page single-news */
+
+@mixin centered-text {
+  color: $w-color !important;
+  font-family: "ArtegraSans ExtraBold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 @mixin title-h4 {
-  h4 {
-    font-size: 35px;
-    line-height: 45px;
+  font-family: "Artegra Sans medium";
+  font-size: 2rem;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@mixin paragraph {
+  font-family: "Artegra Sans extra-light";
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+}
+
+/* page constructions */
+
+@mixin contact-form {
+  label {
+    font-size: 1rem;
     text-transform: uppercase;
   }
-  font-family: "ArtegraSans ExtraBold";
-  font-size: 3rem;
-  text-transform: uppercase;
-  width: 100%;
-  margin-bottom: 2rem;
-  line-height: 3.6rem;
-  font-weight: 900;
+
+  .field-input {
+    border: none;
+    @include underline;
+    border-radius: 0px;
+    height: 25px;
+    border-bottom-color: $lightBlack;
+  }
+
+  .submit-btn {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 0px;
+    text-align: left;
+    @include link;
+    @include underline;
+  }
 }
