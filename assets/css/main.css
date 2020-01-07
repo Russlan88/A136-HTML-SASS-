@@ -765,23 +765,23 @@
   .grid-layout .grid-item__item {
     height: 100%;
     object-fit: fill; }
-  .grid-layout .span:nth-of-type(2n) {
+  .grid-layout__block:nth-of-type(2n) {
     grid-column-end: span 2;
     grid-row-end: span 1; }
-  .grid-layout .span:nth-child(3n) {
+  .grid-layout__block:nth-child(3n) {
     grid-column-end: span 2; }
-  .grid-layout .span:nth-child(5n) {
+  .grid-layout__block:nth-child(5n) {
     grid-row-end: span 2; }
-  .grid-layout .span:nth-child(6n) {
+  .grid-layout__block:nth-child(6n) {
     grid-column-end: span 2;
     grid-row-end: span 1; }
-  .grid-layout .span:nth-child(7n) {
+  .grid-layout__block:nth-child(7n) {
     grid-column-end: span 2;
     grid-row-end: span 1; }
-  .grid-layout .span.span:nth-child(8n) {
+  .grid-layout__block.span:nth-child(8n) {
     grid-column-end: span 2;
     grid-row-end: span 1; }
-  .grid-layout .span:nth-child(9n) {
+  .grid-layout__block:nth-child(9n) {
     grid-column-end: span 2;
     grid-row-end: span 1; }
 
@@ -993,7 +993,8 @@ section .text-content {
     height: 28px;
     margin-bottom: 1rem; }
   .documentation__item p {
-    font-family: "Artegra Sans medium"; }
+    font-family: "Artegra Sans medium";
+    font-size: 1rem; }
 
 /*****************************************************************
 ******************************************************************

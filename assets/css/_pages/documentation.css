@@ -8,11 +8,11 @@ Error: Undefined variable: "$b-color".
 5: 
 6:   &__item {
 7:     border-top: 2px solid $b-color;
-8:     &:last-child {
-9:       border-bottom: 2px solid $b-color;
-10:     }
-11:     img {
-12:       width: 28px;
+8: 
+9:     &:last-child {
+10:       border-bottom: 2px solid $b-color;
+11:     }
+12:     img {
 
 Backtrace:
 /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/documentation.scss:7
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$b-color\".\A         on line 7 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/documentation.scss\A \A 2:   &__thumbnail {\A 3:     object-fit: fill;\A 4:   }\A 5: \A 6:   &__item {\A 7:     border-top: 2px solid $b-color;\A 8:     &:last-child {\A 9:       border-bottom: 2px solid $b-color;\A 10:     }\A 11:     img {\A 12:       width: 28px;"; }
+  content: "Error: Undefined variable: \"$b-color\".\A         on line 7 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/documentation.scss\A \A 2:   &__thumbnail {\A 3:     object-fit: fill;\A 4:   }\A 5: \A 6:   &__item {\A 7:     border-top: 2px solid $b-color;\A 8: \A 9:     &:last-child {\A 10:       border-bottom: 2px solid $b-color;\A 11:     }\A 12:     img {"; }
