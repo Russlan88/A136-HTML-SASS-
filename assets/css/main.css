@@ -788,7 +788,7 @@
 /*****************************************************************
 ******************************************************************
 
-				PAGE ABOUT US
+				PAGE NEWS
 
 ******************************************************************
 *****************************************************************/
@@ -995,9 +995,80 @@ section .text-content {
   .documentation__item p {
     font-family: "Artegra Sans medium"; }
 
+/*****************************************************************
+******************************************************************
+
+				PAGE INFOSTRUCTURE
+
+******************************************************************
+*****************************************************************/
+.A136-map {
+  background: grey;
+  height: 100vh; }
+
+.main-content .main-title_title {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(14px + (50 - 14) * ((100vw - 300px) / (1600 - 300))); }
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #000000; }
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b9b19d;
+  border-radius: 100%;
+  background: #fff; }
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #b9b19d;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  margin-bottom: 30px; }
+
 body {
   font-family: "Artegra Sans regular";
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); }
 
 figure {
   margin: 0; }
@@ -1029,4 +1100,7 @@ img {
   margin-right: 10vw; }
 
 .row {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */

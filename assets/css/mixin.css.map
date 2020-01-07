@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAYA,aAAa;AAUb,iBAAiB;AC8DjB,eAAe;AA2Bf,qCAAqC;AA6BrC,wBAAwB",
+"mappings": "AAYA,aAAa;AAUb,iBAAiB;ACkEjB,eAAe;AA2Bf,qCAAqC;AA6BrC,wBAAwB",
 "sources": ["variables.scss","mixin.scss"],
 "names": [],
 "file": "mixin.css"

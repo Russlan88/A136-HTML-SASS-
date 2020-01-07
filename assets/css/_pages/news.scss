@@ -1,26 +1,25 @@
 /*****************************************************************
 ******************************************************************
 
-				PAGE ABOUT US
+				PAGE NEWS
 
 ******************************************************************
 *****************************************************************/
 
-
 section {
-    @include left-align-content;
+  @include left-align-content;
 }
 
-.pagination{
-    &__item{
-        list-style: none;
-        color: $n-color;
-        &.active{
-            color: $b-color;
-            font-family: "Artegra Sans medium";
-        }
+.pagination {
+  &__item {
+    list-style: none;
+    color: $n-color;
+    &.active {
+      color: $b-color;
+      font-family: "Artegra Sans medium";
     }
-    &__next-page{
-        color: $n-color;
-    }
+  }
+  &__next-page {
+    color: $n-color;
+  }
 }
