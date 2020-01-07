@@ -982,6 +982,19 @@ section .text-content {
     text-decoration: none;
     color: #000000; }
 
+.documentation__thumbnail {
+  object-fit: fill; }
+.documentation__item {
+  border-top: 2px solid #000000; }
+  .documentation__item:last-child {
+    border-bottom: 2px solid #000000; }
+  .documentation__item img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 1rem; }
+  .documentation__item p {
+    font-family: "Artegra Sans medium"; }
+
 body {
   font-family: "Artegra Sans regular";
   font-weight: 100; }
