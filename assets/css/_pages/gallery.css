@@ -69,24 +69,28 @@
   .grid-layout .grid-item__item {
     height: 100%;
     object-fit: fill; }
-  .grid-layout .span:nth-of-type(2n) {
-    grid-column-end: span 2;
-    grid-row-end: span 1; }
-  .grid-layout .span:nth-child(3n) {
-    grid-column-end: span 2; }
-  .grid-layout .span:nth-child(5n) {
-    grid-row-end: span 2; }
-  .grid-layout .span:nth-child(6n) {
-    grid-column-end: span 2;
-    grid-row-end: span 1; }
-  .grid-layout .span:nth-child(7n) {
-    grid-column-end: span 2;
-    grid-row-end: span 1; }
-  .grid-layout .span.span:nth-child(8n) {
-    grid-column-end: span 2;
-    grid-row-end: span 1; }
-  .grid-layout .span:nth-child(9n) {
-    grid-column-end: span 2;
-    grid-row-end: span 1; }
+  .grid-layout__block {
+    height: 600px; }
+    .grid-layout__block:nth-child(9n-7) {
+      grid-column-end: span 2;
+      grid-row-end: span 1; }
+    .grid-layout__block:nth-child(9n-6) {
+      grid-column-end: span 2; }
+    .grid-layout__block:nth-child(9n-5) {
+      grid-column-end: span 1; }
+    .grid-layout__block:nth-child(9n-4) {
+      grid-row-end: span 1; }
+    .grid-layout__block:nth-child(9n-3) {
+      grid-column-end: span 1;
+      grid-row-end: span 1; }
+    .grid-layout__block:nth-child(9n -2) {
+      grid-column-end: span 1;
+      grid-row-end: span 1; }
+    .grid-layout__block.span:nth-child(9n-1) {
+      grid-column-end: span 2;
+      grid-row-end: span 1; }
+    .grid-layout__block:nth-child(9n-0) {
+      grid-column-end: span 2;
+      grid-row-end: span 1; }
 
 /*# sourceMappingURL=gallery.css.map */
