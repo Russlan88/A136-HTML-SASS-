@@ -1070,6 +1070,16 @@ section .text-content {
   padding-left: 1.25rem;
   margin-bottom: 30px; }
 
+.logos__item {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logos__item img {
+    width: 200px !important; }
+
+body {
+  background: red; }
+
 body {
   font-family: "Artegra Sans regular";
   font-weight: 100;

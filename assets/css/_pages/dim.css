@@ -1,0 +1,11 @@
+.logos__item {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logos__item img {
+    width: 200px !important; }
+
+body {
+  background: red; }
+
+/*# sourceMappingURL=dim.css.map */
