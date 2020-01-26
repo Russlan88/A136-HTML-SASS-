@@ -40,10 +40,22 @@ img {
   width: 100%;
 }
 
-// section {
-//     padding-top: 3rem;
-//     padding-bottom: 5rem;
-// }
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 0px;
+  height: 150px;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.2);
+}
+
+.inner-container {
+  &_header {
+    justify-content: space-between;
+  }
+  padding: 0 10rem;
+  display: flex;
+  width: 100%;
+}
 
 .main-title {
   @include main-tite;

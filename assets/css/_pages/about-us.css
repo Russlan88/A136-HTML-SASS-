@@ -1,80 +1,121 @@
-/*
-Error: Undefined mixin 'title__inner-padding'.
-        on line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss, in `title__inner-padding'
-        from line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss
+/*****************************************************************
+******************************************************************
 
-16:     display: flex;
-17:     justify-content: center;
-18:     align-items: center;
-19: 
-20:     &__main {
-21:         @include title__inner-padding;
-22:     }
-23: 
-24:     &__title {
-25:         @include black-gold__title;
-26:         width: 25rem;
+				PAGE ABOUT US
 
-Backtrace:
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss:21:in `title__inner-padding'
-/Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss:21
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'title__inner-padding'.\A         on line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss, in `title__inner-padding'\A         from line 21 of /Users/ruslanogarkov/Documents/Work/A136/assets/css/_pages/about-us.scss\A \A 16:     display: flex;\A 17:     justify-content: center;\A 18:     align-items: center;\A 19: \A 20:     &__main {\A 21:         @include title__inner-padding;\A 22:     }\A 23: \A 24:     &__title {\A 25:         @include black-gold__title;\A 26:         width: 25rem;"; }
+******************************************************************
+*****************************************************************/
+.head-section__rectangle {
+  height: 900rem;
+  width: 270px;
+  position: absolute;
+  border-left: 1px solid rgba(134, 134, 134, 0.2);
+  transform: rotate(-69deg) !important;
+  border-right: 1px solid rgba(134, 134, 134, 0.2);
+  left: 100px;
+  top: -444rem; }
+.head-section__section-title {
+  display: flex;
+  align-items: flex-end; }
+.head-section__title {
+  padding-top: 25rem;
+  width: 65%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6.2rem;
+  padding-bottom: 110px; }
+.head-section__section-paragraph {
+  padding-top: 26rem;
+  width: 35%;
+  font-size: 20px;
+  border-left: 1px solid rgba(134, 134, 134, 0.2);
+  padding-bottom: 117px;
+  height: 100%;
+  display: block; }
+
+.full-image {
+  padding-bottom: 8rem; }
+
+.poligon {
+  background: green;
+  height: 630px;
+  clip-path: polygon(0px 150px, 16.12rem 0, 100% 100%, 68% 100%); }
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .right-container__title {
+    width: 25rem;
+    margin-bottom: 3rem; }
+  .right-container__lead {
+    margin-left: 5rem; }
+  .right-container .link {
+    margin-left: 7rem; }
+
+/* Double-preview section */
+.double-preview__container {
+  align-items: flex-end; }
+  .double-preview__container .small-preview figure {
+    height: 490px;
+    overflow: hidden; }
+.double-preview__text-content {
+  width: 70%;
+  justify-content: space-between; }
+.double-preview__text-item {
+  width: 540px; }
+
+/* Infrastructure */
+.infrastructure__preview {
+  height: auto;
+  width: 100%;
+  margin-top: 12rem; }
+.infrastructure .link {
+  margin-left: 7rem; }
+
+/* Multiple Blocks | Slider */
+.multiple-blocks-containers__first-block {
+  width: 310px; }
+.multiple-blocks-containers__item {
+  width: 100%; }
+  .multiple-blocks-containers__item:first-child {
+    height: 405px; }
+  .multiple-blocks-containers__item:last-child {
+    height: 615px;
+    background: url("../images/About-us/Used__technology-slider/A136__living-room-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+.multiple-blocks-containers__second-block .slider__controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+.multiple-blocks-containers__third-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .multiple-blocks-containers__third-block p {
+    margin-left: 0px; }
+
+/* Multiple Blocks | Gallery */
+.gallery-section {
+  /* first figure */ }
+  .gallery-section__left-container {
+    width: 125px;
+    height: 2290px;
+    align-items: flex-end; }
+  .gallery-section__color-figure {
+    height: 45%;
+    width: 100%; }
+  .gallery-section__innder-upper-container {
+    align-items: flex-end; }
+  .gallery-section__smaller-preview {
+    margin-bottom: 160px; }
+  .gallery-section__fourth-container {
+    justify-content: center;
+    align-items: center;
+    height: 660px; }
+  .gallery-section__preview-container {
+    width: 1170px;
+    margin-top: 140px; }
+
+/*# sourceMappingURL=about-us.css.map */
